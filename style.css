@@ -1,0 +1,493 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES*/
+/* colors & font type*/
+:root{
+    --primary-color: #202020;
+    --secondary-color: rgb(80, 79, 79);
+    --primary-font:'Libre Baskerville', serif;;
+    --secondary-font: 'Quicksand', sans-serif; ;
+}
+
+/* OVERAL DISPLAY */
+html, body{
+    font-family: var(--primary-font);
+    line-height: 1.7em;
+}
+
+/* ELEMENTS */
+/* anchor links */
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.active{
+    color: #fff;
+}
+
+/* headings */
+h1,h2,h3{
+    line-height: 3rem;
+}
+
+/* large heading */
+.l-heading{
+    font-size: 4rem;
+    padding: .5rem 0rem;
+}
+
+ul{
+    list-style: none;
+}
+
+/* images */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+/* LAYOUT STRUCTURE */
+/* padding y-axis */
+.py-1{padding: 10px 0;}
+.py-2{padding: 20px 0;}
+.py-3{padding: 30px 0;}
+
+
+/* TEXT */
+.text-primary{
+    color: var(--primary-color);
+}
+
+
+/* BUTTONS */
+/* basic button */
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff ;
+    background: var(--primary-color) ;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--secondary-color);
+}
+
+/* styled button
+button should use the above .btn class also alongside to format the padding, border etc
+*/
+.btn-light{
+    background: #fff;
+    color: var(--primary-color);
+}
+
+.btn-light:hover{
+    background: rgb(187, 184, 184);
+}
+
+
+/* BACKGROUND COLORS */
+.bg-primary{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.bg-light{
+    background: #fff;
+    color: var(--primary-color);
+}
+
+/* HEADER */
+#header{
+    height: 100vh;
+    /* background: #080808b0; */
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+
+}
+
+#header::before{
+    content: '';
+    background: url('img1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#header .header-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#header .header-container #navbar{
+    background: rgba(0, 0, 0, 0);
+}
+
+#header .header-container #navbar .navbar-container ul{
+    font-family: var(--secondary-font);
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#header .header-container #navbar .navbar-container ul li a{
+    padding: .5rem .8rem;
+}
+
+#header .header-container #navbar .navbar-container ul li a:hover{
+    color: #fff;
+}
+
+#header .header-container #showcase{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    text-align: left;
+    padding: 0rem 5rem;
+}
+
+#header .header-container #showcase .l-heading{
+    color: #fff;
+    font-family: var(--primary-font);
+}
+
+#header .header-container #showcase p{
+    width: 500px;
+    font-weight: bold;
+}
+
+/* SHORT-BIO */
+#brief{
+    padding: 5rem;
+}
+
+#brief .brief-container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#brief .brief-container div{
+    margin: 0rem 2rem;
+}
+
+#brief .brief-container .content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0rem 5rem 0rem 10rem;
+}
+
+#brief .brief-container .content span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#brief .brief-container .image{
+    flex: 1;
+}
+
+#brief .brief-container .image img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgb(138, 136, 136);
+}
+
+/* WORKS */
+#works{
+    padding: 5rem 2rem;
+}
+
+#works .works-container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#works .works-container h1{
+    font-size: 2.3rem;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+#works .works-container .content{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#works .works-container .content .section{
+    margin: 0rem .5rem;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+#works .works-container .content .section img{
+    height: 300px;
+    width: 250px;
+    padding-bottom: 1rem;
+}
+
+#works .works-container .content .section h2{
+    color: #fff;
+}
+
+#works .works-container .content .section p{
+    margin: 0rem .2rem;
+}
+
+/* FAMILY */
+#fam{
+    padding: 2rem 1rem;
+}
+
+#fam .fam-container{
+    text-align: center;
+}
+
+#fam .fam-container .heading{
+    padding-top: 3rem;
+    font-size: 1.5rem;
+}
+
+#fam .fam-container .content{
+    /* background: #b4b2b2; */
+    padding: 4rem 10rem;
+}
+
+#fam .fam-container .content .frame{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    padding-top: 2rem;
+}
+
+#fam .fam-container .content .frame .picha{
+    margin-right: 2rem;
+}
+
+#fam .fam-container .content .frame .picha img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+} 
+
+#fam .fam-container .content .frame .detail h2,
+#fam .fam-container .content .frame .detail p{
+    font-family: var(--secondary-font);
+}
+
+#fam .fam-container .content .frame .detail h2{
+    font-size: 1.4rem;
+}
+
+/* MESSAGES */
+#messages{
+    padding: 4rem 1rem;
+}
+
+#messages .messages-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#messages .messages-container .heading{
+    padding: 4rem 0rem;
+}
+
+#messages .messages-container .heading h1{
+    font-size: 2.5rem;
+}
+
+
+#messages .messages-container .boxes{
+    display: flex;
+}
+
+#messages .messages-container .boxes .box{
+    /* padding: 1rem; */
+    background: #fff;
+    margin: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#messages .messages-container .boxes .box .name{
+    padding: 1rem;
+}
+
+#messages .messages-container .boxes .box .name p{
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: #000;
+    font-family: var(--primary-font);
+}
+
+#messages .messages-container .boxes .box .line{
+    border: 1px solid var(--primary-color);
+    width: 100%;
+}
+
+#messages .messages-container .boxes .box .words,
+#messages .messages-container .boxes .box .more{
+    padding: 1rem;
+    font-family: var(--secondary-font);
+}
+
+#messages .messages-container .other{
+    padding: 3rem;
+}
+
+#messages .messages-container .other .btn{
+    padding: 1rem 5rem;
+}
+
+/* FORM */
+#submit{
+    padding: 5rem;
+}
+
+#submit .submit-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit .submit-container h1{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+#submit form{
+    font-family: var(--secondary-font);
+}
+
+#submit .form-section{
+    margin-bottom: 1rem;
+}
+
+#submit .form-section label{
+    display: block;
+}
+
+#submit .form-section input{
+    border: 1px solid rgb(102, 101, 101);
+}
+
+#submit .form-section input::placeholder{
+    font-family: var(--secondary-font);
+}
+
+#submit .form-section input:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+#submit .form-section textarea{
+    border: 1px solid rgb(102, 101, 101);
+    padding: .5rem;
+    width: 100%;
+    height: 10rem;
+}
+
+#submit .form-section textarea::placeholder{
+    font-family: var(--secondary-font);
+}
+
+#submit .form-section textarea:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+#submit .form-section .input{
+    padding: .5rem 5rem .5rem .5rem;
+}
+
+/* BIO-SUM */
+#bio-sum{
+    padding: 5rem 3rem 5rem 20rem;
+    color: #fff;
+    background: #000;
+}
+
+#bio-sum .sum-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    height: 100%;
+    width: 70%;
+}
+
+#bio-sum .sum-container h1{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+#bio-sum .sum-container p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #fff;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}

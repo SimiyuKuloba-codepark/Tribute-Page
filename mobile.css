@@ -1,0 +1,103 @@
+/* headings */
+h1,h2,h3{
+    line-height: 2.5rem;
+}
+
+/* large heading */
+.l-heading{
+    font-size: 2.6rem;
+    padding: .5rem 0rem;
+}
+
+/* HEADER */
+#header .header-container #showcase{
+    padding: 0rem 2rem;
+}
+
+#header .header-container #showcase p{
+    width: 350px;
+}
+
+/* SHORT-BIO */
+#brief{
+    padding: 2rem 1rem;
+}
+
+#brief .brief-container{
+    flex-direction: column;
+}
+
+#brief .brief-container div{
+    margin: 2rem;
+}
+
+#brief .brief-container .content{
+    padding: 1rem 2rem;
+}
+
+#brief .brief-container .image img{
+    height: 300px;
+    width: 300px;
+}
+
+#works .works-container .content{
+    flex-direction: column;
+}
+
+#works .works-container .content .section{
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+}
+
+/* FAMILY */
+#fam{
+    padding: 1rem;
+}
+
+#fam .fam-container .content{
+    padding: 1rem;
+}
+
+#fam .fam-container .content .frame{
+    flex-direction: column;
+    text-align: center;
+}
+
+#fam .fam-container .content .frame .picha{
+    margin: 0rem;
+}
+
+#fam .fam-container .content .frame .detail h2{
+    font-size: 1rem;
+}
+
+/* MESSAGES */
+#messages{
+    padding: 2rem;
+}
+
+#messages .messages-container .boxes{
+    flex-direction: column;
+}
+
+#messages .messages-container .boxes .box{
+    margin: 2rem 3rem;
+}
+
+/* FORM */
+#submit{
+    padding: 2rem 1rem;
+}
+
+#submit .submit-container h1{
+    font-size: 2rem;
+}
+
+/* BIO-SUM */
+#bio-sum{
+    padding: 5rem 3rem 5rem 3rem;
+}
+
+#bio-sum .sum-container{
+    width: 100%;
+}
